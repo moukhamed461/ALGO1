@@ -1,0 +1,19 @@
+algoritime: somme_element_distinct
+variable: ens1; ens2; somme: tableau entier
+debut
+
+somme =:0
+pour ( chaque element de ens1)
+    si (elem dans ens2 )alors 
+    somme=: somme + elem 
+      finsi
+    faire 
+finfaire
+
+pour (chaque element non dans ens2)
+    si(elem non dans ens1 )alors  
+       somme=:somme + elem
+       finsi 
+    faire 
+finfaire
+ecrire ("la somme des elements distinct:";somme)
